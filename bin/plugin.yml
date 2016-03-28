@@ -1,0 +1,13 @@
+name: DynamicDungeons
+main: com.SkyIsland.DynamicDungeons.DynamicDungeonsPlugin
+version: 0.01
+permissions:
+    DD_Admin:
+        default: op
+    DD_Player:
+        default: true
+commands:
+    dd:
+        permission: DD_Admin
+        usage: /dd <Command> <Args>
+        description: This command is used to interact with plugin-level commands
