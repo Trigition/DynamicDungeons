@@ -3,9 +3,12 @@ package com.SkyIsland.Dungeon;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.SkyIsland.Voxel.Voxel;
+
 public abstract class DungeonNode {
 
 	private List<Goal> NodeGoals;
+	private List<Voxel> NodeVoxels;
 	
 	public DungeonNode() {
 		this.NodeGoals = new ArrayList<Goal>();
