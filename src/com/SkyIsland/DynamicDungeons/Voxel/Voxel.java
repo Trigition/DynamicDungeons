@@ -1,4 +1,4 @@
-package com.SkyIsland.Voxel;
+package com.SkyIsland.DynamicDungeons.Voxel;
 
 /**
  * This class represents a base block unit of a {@link DungeonNode} <br />

@@ -16,7 +16,11 @@ public class DynamicDungeonsPlugin extends JavaPlugin {
 			getDataFolder().mkdirs();
 			getLogger().warning("No Data Folder found, creating...");
 		}
-		
+	}
+	
+	@Override
+	public void onEnable() {
+		System.out.println("Dynamic Dungeons enabled...");
 		
 	}
 }

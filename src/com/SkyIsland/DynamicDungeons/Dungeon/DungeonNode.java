@@ -1,9 +1,9 @@
-package com.SkyIsland.Dungeon;
+package com.SkyIsland.DynamicDungeons.Dungeon;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.SkyIsland.Voxel.Voxel;
+import com.SkyIsland.DynamicDungeons.Voxel.Voxel;
 
 public abstract class DungeonNode {
 

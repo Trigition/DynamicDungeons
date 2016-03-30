@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.SkyIsland.Dungeon;
+package com.SkyIsland.DynamicDungeons.Dungeon;
 
 import org.jgrapht.DirectedGraph;
 import org.jgrapht.graph.DefaultDirectedGraph;

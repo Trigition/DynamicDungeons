@@ -1,4 +1,4 @@
-package com.SkyIsland.Dungeon;
+package com.SkyIsland.DynamicDungeons.Dungeon;
 
 public abstract class Goal {
 	

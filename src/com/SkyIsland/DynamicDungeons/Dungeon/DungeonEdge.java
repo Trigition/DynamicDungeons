@@ -1,4 +1,4 @@
-package com.SkyIsland.Dungeon;
+package com.SkyIsland.DynamicDungeons.Dungeon;
 
 /**
  * This class represents the connection between 2 {@link DungeonNode} instances.
