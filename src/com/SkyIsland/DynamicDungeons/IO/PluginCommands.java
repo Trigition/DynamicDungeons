@@ -26,14 +26,12 @@ public class PluginCommands implements CommandExecutor {
 	@Override
 	public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 		if (command.getName().equalsIgnoreCase("dd")) {
-			if (args.length < 1) {
+			// Check arg length and if the player is OP
+			if (args.length < 1 || !sender.isOp()) {
 				return false;
 			}
 			
-			// Player should be OP/Admin
-			if (!sender.isOp()) {
-				return false;
-			}
+			String subCmd = args[0];
 		}
 		return false;
 	}
