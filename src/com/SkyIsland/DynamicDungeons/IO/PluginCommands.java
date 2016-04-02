@@ -32,6 +32,17 @@ public class PluginCommands implements CommandExecutor {
 			}
 			
 			String subCmd = args[0];
+			if (subCmd.equalsIgnoreCase("load")) {
+				// Load Dungeon into memory
+			}
+			
+			if (subCmd.equalsIgnoreCase("deploy")) {
+				// Builds the dungeon
+			}
+			
+			if (subCmd.equalsIgnoreCase("undo")) {
+				// Deconstructs the previous dungeon
+			}
 		}
 		return false;
 	}
