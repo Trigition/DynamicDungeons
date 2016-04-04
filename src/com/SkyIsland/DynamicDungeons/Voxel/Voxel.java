@@ -23,7 +23,6 @@ public class Voxel {
 	private int voxel_Z;
 	
 	private Voxel prev_Voxel;
-	private World world;
 	private Location vLocation;
 	
 	
@@ -53,20 +52,27 @@ public class Voxel {
 		this.voxel_Z = v.getVoxel_Z() + rel_z;
 		
 		this.prev_Voxel = v;
-		
-		this.world = w;
 		this.vLocation = new Location(w, this.voxel_X, this.voxel_Y, this.voxel_Z);
 	}
 	
+	/**
+	 * This method constructs the voxel in the Minecraft World
+	 * TODO We need to construct the block data, not just wool :P
+	 */
 	public void construct() {
-		Chunk buildChunk = this.vLocation.getChunk();
+		Location buildLocation = new Location(this.vLocation.getWorld(), this.voxel_X, this.voxel_Y, this.voxel_Z);
 		Block block;
 		// Build in order of ZXY
 		for (int x = 0; x < max_X; x++) {
 			for (int y = 0; y < max_Y; y++) {
 				for (int z = 0; z < max_z; z++) {
+					// Set Build Location
+					buildLocation.setX(x);
+					buildLocation.setY(y);
+					buildLocation.setZ(z);
+					block = buildLocation.getBlock();
 					//TODO construct block with specified material
-					block = buildChunk.getBlock(x, y, z);
+					//block = buildChunk.getBlock(x, y, z);
 					block.setType(Material.WOOL);
 				}
 			}
