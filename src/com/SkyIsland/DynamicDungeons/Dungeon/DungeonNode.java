@@ -3,15 +3,20 @@ package com.SkyIsland.DynamicDungeons.Dungeon;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.SkyIsland.DynamicDungeons.Voxel.Voxel;
-
 public abstract class DungeonNode {
 
-	private List<Goal> NodeGoals;
-	private List<Voxel> NodeVoxels;
+	private List<Goal> nodeGoals;
 	
 	public DungeonNode() {
-		this.NodeGoals = new ArrayList<Goal>();
+		this.nodeGoals = new ArrayList<Goal>();
+	}
+	
+	public void addGoals(List<Goal> goals) {
+		this.nodeGoals.addAll(goals);
+	}
+	
+	public void addGoals(Goal...goal) {
+		this.nodeGoals.addAll(nodeGoals);
 	}
 	
 	/**
@@ -19,13 +24,7 @@ public abstract class DungeonNode {
 	 * @return
 	 */
 	public int construct() {
-		//We essentially want to do this, but more intricate
-		//than linear builds
-		/**for (Goal g : this.NodeGoals) {
-			g.construct();
-		}**/
+		// We need to determine what requirements have been specified by the "Goal"
 		return 0;
 	}
-	
-	
 }

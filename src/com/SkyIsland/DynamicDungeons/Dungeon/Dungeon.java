@@ -17,4 +17,13 @@ public class Dungeon {
 	public Dungeon() {
 		this.DungeonGraph = new DefaultDirectedGraph<DungeonNode, DungeonEdge>(DungeonEdge.class);
 	}
+	
+	public boolean addNode(DungeonNode dn) {
+		this.DungeonGraph.addVertex(dn);
+		return false;
+	}
+	
+	public DungeonEdge connectNodes(DungeonNode from, DungeonNode to) {
+		return this.DungeonGraph.addEdge(from, to);
+	}
 }
