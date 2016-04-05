@@ -8,8 +8,8 @@ package com.SkyIsland.DynamicDungeons.Dungeon;
 public abstract class DungeonEdge {
 	
 	private int edgeDistance;
-	private DungeonNode v1;
-	private DungeonNode v2;
+	private DungeonNode source;
+	private DungeonNode destination;
 	
 	/**
 	 * Creates an edge between vertex 1 to vertex 2
@@ -17,11 +17,9 @@ public abstract class DungeonEdge {
 	 * @param vertex2
 	 * @param distance
 	 */
-	public DungeonEdge(DungeonNode vertex1, DungeonNode vertex2, int distance) {
-		this.v1 = vertex1;
-		this.v2 = vertex2;
-		
+	public DungeonEdge(DungeonNode src, DungeonNode dst, int distance) {
+		this.source = src;
+		this.destination = dst;
 		this.edgeDistance = distance;
 	}
-	
 }
