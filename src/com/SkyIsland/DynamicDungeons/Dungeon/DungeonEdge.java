@@ -5,7 +5,7 @@ package com.SkyIsland.DynamicDungeons.Dungeon;
  * @author williamfong
  *
  */
-public class DungeonEdge {
+public abstract class DungeonEdge {
 	
 	private int edgeDistance;
 	private DungeonNode v1;
