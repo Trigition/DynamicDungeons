@@ -1,6 +1,5 @@
 package com.SkyIsland.DynamicDungeons.Voxel;
 
-import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
